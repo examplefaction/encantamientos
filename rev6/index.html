@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=1000, initial-scale=1">
+
+        <!-- Search engine metadata -->
+        <title>Encantamientos</title>
+        <meta name="description" content="Minecraft Enchantment Calculator calculates the probabilities of getting particular enchants at certain levels for certain items.  It can also tell you the best level to get a certain enchant." />
+        <meta name="author" content="Minecraft Enchantment Calculator" />
+
+        <!-- CSS and custom font -->
+        <link rel="stylesheet" href="../shared/normalize.css">
+        <link rel="stylesheet" href="../shared/main.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic+Slab">
+
+        <!-- Setting up favicon stuff -->
+        <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+        <link rel="icon" type="image/png" href="../favicon.png" />
+
+        <!-- iOS banner -->
+        <meta name="apple-itunes-app" content="app-id=763850739">
+        <script type="text/javascript">
+            // Only show the iOS ad if the user isn't on iOS (iOS users have an appbanner instead)
+            window.onload = function () {
+                var uagent = navigator.userAgent.toLowerCase();
+
+                if (uagent.search("iphone") > -1 ||
+                    uagent.search("ipod") > -1 ||
+                    uagent.search("ipad") > -1 ||
+                    uagent.search("appletv") > -1) {
+                    var ios_node = document.getElementById("ios_ad")
+                    ios_node.parentNode.removeChild(ios_node);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Title and version selector -->
+        <div id="title">
+            <img src="../shared/logo.png" height="100" width="100" alt="" id="logo" />
+            Encantamientos
+        </div>
+
+        <!-- Calculator form area -->
+        <div id="main_window">
+            <div id="or">
+                - Encantar -
+            </div>
+            <div id="reverse_calc">
+                Mejor nivel para conseguir
+                <select id="enchant">
+                    <option value="aquaaffinity">Aqua Affinity</option>
+                    <option value="boa">Bane of Arthropods</option>
+                    <option value="blastprot">Blast Protection</option>
+                    <option value="depthstrider">Depth Strider</option>
+                    <option value="efficiency">Efficiency</option>
+                    <option value="featherfalling">Feather Falling</option>
+                    <option value="fireaspect">Fire Aspect</option>
+                    <option value="fireprot">Fire Protection</option>
+                    <option value="flame">Flame</option>
+                    <option value="fortune">Fortune</option>
+                    <option value="infinity">Infinity</option>
+                    <option value="knockback">Knockback</option>
+                    <option value="looting">Looting</option>
+                    <option value="luckofthesea">Luck of the Sea</option>
+                    <option value="lure">Lure</option>
+                    <option value="power">Power</option>
+                    <option value="projprot">Projectile Protection</option>
+                    <option value="protection">Protection</option>
+                    <option value="punch">Punch</option>
+                    <option value="respiration">Respiration</option>
+                    <option value="sharpness" selected="yes">Sharpness</option>
+                    <option value="silktouch">Silk Touch</option>
+                    <option value="smite">Smite</option>
+                    <option value="thorns">Thorns</option>
+                    <option value="unbreaking">Unbreaking</option>
+                </select>
+                <select id="enchlevel">
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3">III</option>
+                    <option value="4" selected="yes">IV</option>
+                    <option value="5">V</option>
+                </select>
+                <br />
+                en una
+                <select id="revmaterial">
+                    <option value="chain">Chain</option>
+                    <option value="diamond" selected="yes">Diamond</option>
+                    <option value="gold">Gold</option>
+                    <option value="iron">Iron</option>
+                    <option value="leather">Leather</option>
+                    <option value="stone">Stone</option>
+                    <option value="wood">Wood</option>
+                    <option value="book">Book</option>
+                </select>
+                <select id="revtool">
+                    <option value="axe">Axe</option>
+                    <option value="boots">Boots</option>
+                    <option value="bow">Bow</option>
+                    <option value="chestplate">Chest Plate</option>
+                    <option value="fishing rod">Fishing Rod</option>
+                    <option value="helmet">Helmet</option>
+                    <option value="leggings">Leggings</option>
+                    <option value="pickaxe">Pickaxe</option>
+                    <option value="shovel">Shovel</option>
+                    <option value="sword" selected="yes">Sword</option>
+                    <option value="book">(Book)</option>
+                </select>
+                ?
+                <input type="button" id="revcalc" value="Calculate..." />
+            </div>
+        </div>
+
+        <!-- Results area (populated by Javascript later) -->
+        <div id="result">
+        </div>
+
+        <!-- Get Google's shared version of jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <!-- If Google is somehow down, download our local one instead -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <!-- Google analytics tracking code (UA-27652939-1) -->
+        <script>
+            var _gaq=[['_setAccount','UA-27652939-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        
+        <!-- Load calculator JS -->
+        <script src="../shared/js/shared.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
