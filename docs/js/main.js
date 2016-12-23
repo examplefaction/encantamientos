@@ -164,7 +164,7 @@ $(function() {
             // Clear results
             $("#result").html("");
             // Top info
-            $("#result").html($("#result").html() + "<div class=\"info\">Calculated for Minecraft Snapshots 1.8<br />Enchantment simulated 10,000 times, but results may still vary.</div>");
+            $("#result").html($("#result").html() + "<div class=\"info\">Encantamiento calculado:<br />Encantamiento simulado 10,000 veces, pero los resultados pueden variar.</div>");
             // Result table
             $("#result").html($("#result").html() + "Result:<br /><table id=\"resultTable\"><tr><td>Enchant</td><td>Probability</td></tr></table>");
             // Extra enchants table

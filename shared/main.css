@@ -94,7 +94,7 @@ textarea {
    ========================================================================== */
 
 body {
-background: url(https://www.lootcrate.com/assets/crates/minechest-crate/mc_bg-408bb1b0551e40e265c094d0e322504a9ad9aa07f696ce49c5c6ecbe5cfeb090.jpg) repeat;
+    background: url(https://www.lootcrate.com/assets/crates/minechest-crate/mc_bg-408bb1b0551e40e265c094d0e322504a9ad9aa07f696ce49c5c6ecbe5cfeb090.jpg) repeat;
     background-image: url(https://www.lootcrate.com/assets/crates/minechest-crate/mc_bg-408bb1b0551e40e265c094d0e322504a9ad9aa07f696ce49c5c6ecbe5cfeb090.jpg);
     background-position-x: center;
     background-position-y: top;
@@ -126,18 +126,18 @@ background: url(https://www.lootcrate.com/assets/crates/minechest-crate/mc_bg-40
 #version {
     float: right;
 	color: rgba(0,0,0,0.2);
-	text-shadow: 0px 1px 0px rgba(238,238,238,0.5);
+	text-shadow: 0px 1px 0px rgba(238,238,238,0.14);
     width: 250px;
     background-position: 235px 13px;
     margin-top: 5px;
 }
 
 #logo {
-	transition: all .2s;
--o-transition: all .2s;
--moz-transition: all .2s;
--webkit-transition: all .2s;
-	margin: -35px 0px 0px 0px;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    margin: -35px 0px 0px 0px;
 }
 #logo:hover {
 transform: scale(1.25);
@@ -238,7 +238,6 @@ input {
 	border-bottom: 1px #666666 solid;
 }
 
-
 #calcback {
 	width: 800px;
 	margin: 5px auto 5px auto;
@@ -254,6 +253,14 @@ input {
 #normal_calc {
 	height: 70px;
 	overflow: hidden;
+}
+
+#or {
+	padding: 0px;
+	color: rgba(255,255,255,0);
+	height: 40px;
+	overflow: hidden;
+	line-height: 40px;
 }
 
 #reverse_calc {
