@@ -238,7 +238,7 @@ $(function() {
             $("#result").html($("#result").html() + "<div id=\"linkdiv\">Link: <input type=\"text\" id=\"link\" /></div>");
             // Back button
             $("#result").html($("#result").html() + "<input type=\"button\" id=\"calcback\" value=\"Back\" />");
-            $("#link").val("http://www.minecraftenchantmentcalculator.com/" + revisionName + "/#" + getQuickCode(2));
+            $("#link").val("-" + revisionName + "/#" + getQuickCode(2));
             guaranteedEnchant = "";
             bestRevChance = 0;
             bestRevLevel = 0;
@@ -660,7 +660,7 @@ function setupGraph() {
 
 */
 function revCalc (enchantName, mat, tool) {
-    writeLineToOutput ("Minecraft Enchanting Calculator for Minecraft Snapshots 1.8 and later - http://www.minecraftenchantmentcalculator.com/");
+    writeLineToOutput ("Minecraft Enchanting Calculator");
     writeLineToOutput ("");
     writeLineToOutput ("Output log:  (Each level is calculated 10,000 times, but results may still vary)");
     if (mat == "book") {
@@ -1318,7 +1318,7 @@ function calc(mat, tool, level) {
         var enchNameArray = new Array();
         var enchProbArray = new Array();
 
-        writeLineToOutput ("Minecraft Enchanting Calculator for Minecraft Snapshots 1.8 - http://www.minecraftenchantmentcalculator.com/");
+        writeLineToOutput ("Minecraft Enchanting Calculator");
         writeLineToOutput ("");
         writeLineToOutput ("Output log:  (This output was calculated 10,000 times, but results may still vary)");
         if (mat == "book") {
