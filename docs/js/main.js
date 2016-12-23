@@ -177,7 +177,7 @@ $(function() {
             $("#result").html($("#result").html() + "<div id=\"linkdiv\">Link: <input type=\"text\" id=\"link\" /></div>");
             // Back button
             $("#result").html($("#result").html() + "<input type=\"button\" id=\"calcback\" value=\"Back\" />");
-            $("#link").val("http://www.google.com/" + revisionName + "/#" + getQuickCode(1));
+            $("#link").val("https://examplefaction.github.io/encantamientos/docs/index.html" + revisionName + "/#" + getQuickCode(1));
             guaranteedEnchant = $("#guaranteed_enchant option:selected").text();
             if (guaranteedEnchant == "(Unknown)") {
                 guaranteedEnchant = "";
