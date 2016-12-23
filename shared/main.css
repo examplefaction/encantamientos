@@ -94,16 +94,24 @@ textarea {
    ========================================================================== */
 
 body {
-	background-image: url('bg.jpg');
-	background-position: center -12px;
-	background-repeat: no-repeat;
-	background-color: #ffffff;
-	background-attachment: fixed;
-	background-size: cover;
+background: url(https://www.lootcrate.com/assets/crates/minechest-crate/mc_bg-408bb1b0551e40e265c094d0e322504a9ad9aa07f696ce49c5c6ecbe5cfeb090.jpg) repeat;
+    background-image: url(https://www.lootcrate.com/assets/crates/minechest-crate/mc_bg-408bb1b0551e40e265c094d0e322504a9ad9aa07f696ce49c5c6ecbe5cfeb090.jpg);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-position: center top;
+    color: #c5bbb7;
+    font-size: 12px;
 }
 
 #title {
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.14);
 	width: 800px;
 	height: 30px;
 	border-radius: 15px 15px 0px 0px;
@@ -125,12 +133,22 @@ body {
 }
 
 #logo {
-	margin: -35px 20px 0px -60px;
-	float: left;
+	transition: all .2s;
+-o-transition: all .2s;
+-moz-transition: all .2s;
+-webkit-transition: all .2s;
+	margin: -35px 0px 0px 0px;
+}
+#logo:hover {
+transform: scale(1.25);
+transition: all .2s;
+-o-transition: all .2s;
+-moz-transition: all .2s;
+-webkit-transition: all .2s;
 }
 
 #main_window {
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.14);
 	border-top: solid 1px #eeeeee;
 	width: 800px;
 	margin: 0px auto;
@@ -142,7 +160,7 @@ body {
 }
 
 #result {
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.14);
 	width: 800px;
 	height: 5px;
 	margin: 0px auto 50px auto;
@@ -220,6 +238,7 @@ input {
 	border-bottom: 1px #666666 solid;
 }
 
+
 #calcback {
 	width: 800px;
 	margin: 5px auto 5px auto;
@@ -235,14 +254,6 @@ input {
 #normal_calc {
 	height: 70px;
 	overflow: hidden;
-}
-
-#or {
-	padding: 0px;
-	color: rgb(255, 0, 0);
-	height: 40px;
-	overflow: hidden;
-	line-height: 40px;
 }
 
 #reverse_calc {
